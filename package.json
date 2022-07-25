@@ -1,13 +1,14 @@
 {
-  "name": "hacker-news-clone",
+  "name": "tech-blog-mvc",
   "version": "1.0.0",
-  "description": "",
+  "description": "<p align=\"center\">\r     <img src=\"https://img.shields.io/badge/Javascript-yellow\" />\r     <img src=\"https://img.shields.io/badge/express-orange\" />\r     <img src=\"https://img.shields.io/badge/Sequelize-blue\"  />\r     <img src=\"https://img.shields.io/badge/mySQL-blue\"  />\r     <img src=\"https://img.shields.io/badge/dotenv-green\" />\r </p>",
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "seeds": "node seeds/index.js"
+    "seeds": "node seeds/index.js",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "xndroli",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^4.0.1",
@@ -22,5 +23,31 @@
   },
   "devDependencies": {
     "jest": "^25.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xndroli/Tech-Blog-MVC.git"
+  },
+  "keywords": [
+    "model",
+    "view",
+    "controller",
+    "CMS",
+    "MVC",
+    "paradigm",
+    "handlebars.js",
+    "Sequelize",
+    "ORM",
+    "express-session",
+    "npm",
+    "authentication",
+    "MySQL2",
+    "dotenv",
+    "bcrypt",
+    "connect-session-sequelize"
+  ],
+  "bugs": {
+    "url": "https://github.com/xndroli/Tech-Blog-MVC/issues"
+  },
+  "homepage": "https://github.com/xndroli/Tech-Blog-MVC#readme"
 }
