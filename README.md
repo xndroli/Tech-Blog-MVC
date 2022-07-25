@@ -72,9 +72,9 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 ## Demo
 
-The following video shows an example of the application being used from the command line:
+The following link takes you to the deployed Tech Blog application:
 
-[![A walkthrough video that demonstrates the functionality of the e-commerce back end showing all of the technical acceptance criteria being met](./Assets/)](https://2u-20.wistia.com/medias/2lnle7xnpk)
+[![Link to deployed application]](Link to external site)
 
 ## Installation
 
@@ -104,124 +104,9 @@ Enter PW when promted
 
 ## Features
 
-I’ll use the [MySQL2] (https://www.npmjs.com/package/mysql2) and [Sequelize] (https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv package] (https://www.npmjs.com/package/dotenv) to use environment variables to store sensitive data, like your MySQL username, password, and database name.
+The application’s folder structure will follow the Model-View-Controller paradigm. I'm using the [express-handlebars] (https://www.npmjs.com/package/express-handlebars) package to use Handlebars.js for Views, the [MySQL2] (https://www.npmjs.com/package/mysql2) and [Sequelize] (https://www.npmjs.com/package/sequelize) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
 
-I'll use the schema.sql file in the db folder to create a database using MySQL shell commands. I'll use environment variables to store sensitive data, like your MySQL username, password, and database name.
-
-**Database Models**:
-
-Your database should contain the following four models, including the requirements listed for each model:
-
-- `Category`
-
-  - `id`
-
-  - Integer
-
-  - Doesn't allow null values
-
-  - Set as primary key
-
-  - Uses auto increment
-
-  - `category_name`
-
-  - String
-
-  - Doesn't allow null values
-
-- `Product`
-
-  - `id`
-
-  - Integer
-
-  - Doesn't allow null values
-
-  - Set as primary key
-
-  - Uses auto increment
-
-  - `product_name`
-
-  - String
-
-  - Doesn't allow null values
-
-  - `price`
-
-  - Decimal
-
-  - Doesn't allow null values
-
-  - Validates that the value is a decimal
-
-  - `stock`
-
-  - Integer
-
-  - Doesn't allow null values
-
-  - Set a default value of 10
-
-  - Validates that the value is numeric
-
-  - `category_id`
-
-  - Integer
-
-  - References the `category` model's `id`
-
-- `Tag`
-
-  - `id`
-
-  - Integer
-
-  - Doesn't allow null values
-
-  - Set as primary key
-
-  - Uses auto increment
-
-  - `tag_name`
-
-  - String
-
-- `ProductTag`
-
-  - `id`
-
-  - Integer
-
-  - Doesn't allow null values
-
-  - Set as primary key
-
-  - Uses auto increment
-
-  - `product_id`
-
-  - Integer
-
-  - References the `product` model's `id`
-
-  - `tag_id`
-
-  - Integer
-
-  - References the `tag` model's `id`
-
-**Associations**:
-You'll need to execute association methods on your Sequelize models to create the following relationships between them:
-
-- `Product` belongs to `Category`, as a category can have multiple products but a product can only belong to one category.
-
-- `Category` has many `Product` models.
-
-- `Product` belongs to many `Tag` models. Using the `ProductTag` through model, allow products to have multiple tags and tags to have many products.
-
-- `Tag` belongs to many `Product` models.
+This application also features the [dotenv] (https://www.npmjs.com/package/dotenv) package to use environment variables, the [bcrypt] (https://www.npmjs.com/package/bcrypt) package to hash passwords, and the [express-session] (https://www.npmjs.com/package/express-session) and [connect-session-sequelize] (https://www.npmjs.com/package/connect-session-sequelize) packages to add authentication.
 
 ---
 
