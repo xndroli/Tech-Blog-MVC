@@ -72,19 +72,13 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 ## Demo
 
-The following link takes you to the deployed Tech Blog application:
+The following link takes you to the live deployed Tech Blog application:
 
-[![Link to deployed application]](Link to external site)
+[![Link to deployed application](.public/assets/mvc-demo-01.gif)](Link to external site)
 
 ## Installation
 
-`npm init`
-
-`npm install mysql2`
-
-`npm install sequelize`
-
-`npm install dotenv`
+`npm i`
 
 ## Usage
 
@@ -97,6 +91,8 @@ Enter PW when promted
 `source db/schema.sql`
 
 `quit`
+
+`npm run test`
 
 `npm run seed`
 
