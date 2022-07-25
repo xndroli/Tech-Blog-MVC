@@ -72,11 +72,9 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 ## Demo
 
-The following link takes you to the live deployed Tech Blog application:
+The following link takes you to the live deployed Tech Blog application: [Link-to-Tech-Blog](https://google.com/)
 
-[Link-to-Tech-Blog](https://google.com/)
-
-![Application GIF](.public/assets/mvc-demo-01.gif)
+![Application GIF](public/assets/mvc-demo-01.gif)
 
 ## Installation
 
