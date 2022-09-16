@@ -1,39 +1,41 @@
-<html lang="en">
+<html lang='en'>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MVC Tech Blog</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
+	<head>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<title>MVC Tech Blog</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
 
-  <body>
-    <div class="wrapper">
-      <header class="hero">
-        <nav>
-          <a class="link" href="/">Home</a>
-          {{#if loggedIn}}
-            <a href="/dashboard">Dashboard</a>
-            <button id="logout" class="btn-no-style">Logout</button>
-          {{else}}
-            <a href="/login">Login</a>
-          {{/if}}
-        </nav>
-        <h1 class="app-title"><i class="fab"></i>
-          <a href="/">The Tech Blog</a>
-        </h1>
-      </header>
-      <main>
-        {{{body}}}
-      </main>
-      <footer>
-        Thanks for visiting!
-      </footer>
-    </div>
+	<body>
+		<div class='wrapper'>
+			<header class='hero'>
+				<h1 class='app-title'><i class='fab'></i>
+					<a href='/'>The Tech Blog</a>
+				</h1>
+				<nav>
+					<a href='/' class='link'>Home</a>
+					{{#if loggedIn}}
+						<a href='/dashboard' class='link'>Dashboard</a>
+						<a href='/dashboard/create/' class='link'>Create Post</a>
+						<button id='logout' class='btn-no-style'>Logout</button>
+					{{else}}
+						<a href='/login' class='link'>Login</a>
+						<a href='/signup' class='link'>Sign Up</a>
+					{{/if}}
+				</nav>
+			</header>
+			<main>
+				{{{body}}}
+			</main>
+			<footer>
+				Thanks for visiting!
+			</footer>
+		</div>
 
-    {{#if loggedIn}}
-      <script src="/javascript/logout.js"></script>
-    {{/if}}
-  </body>
+		{{#if loggedIn}}
+			<script src='/javascript/logout.js'></script>
+		{{/if}}
+	</body>
 
 </html>
