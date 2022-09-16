@@ -1,53 +1,53 @@
 {
-  "name": "tech-blog-mvc",
-  "version": "1.0.0",
-  "description": "<p align=\"center\">\r     <img src=\"https://img.shields.io/badge/Javascript-yellow\" />\r     <img src=\"https://img.shields.io/badge/express-orange\" />\r     <img src=\"https://img.shields.io/badge/Sequelize-blue\"  />\r     <img src=\"https://img.shields.io/badge/mySQL-blue\"  />\r     <img src=\"https://img.shields.io/badge/dotenv-green\" />\r </p>",
-  "main": "server.js",
-  "scripts": {
-    "test": "jest",
-    "seeds": "node seeds/index.js",
-    "start": "node server.js"
-  },
-  "author": "xndroli",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^4.0.1",
-    "connect-session-sequelize": "^6.1.1",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "express-session": "^1.17.0",
-    "handlebars": "^4.7.3",
-    "mysql2": "^2.1.0",
-    "sequelize": "^5.21.5"
-  },
-  "devDependencies": {
-    "jest": "^25.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xndroli/Tech-Blog-MVC.git"
-  },
-  "keywords": [
-    "model",
-    "view",
-    "controller",
-    "CMS",
-    "MVC",
-    "paradigm",
-    "handlebars.js",
-    "Sequelize",
-    "ORM",
-    "express-session",
-    "npm",
-    "authentication",
-    "MySQL2",
-    "dotenv",
-    "bcrypt",
-    "connect-session-sequelize"
-  ],
-  "bugs": {
-    "url": "https://github.com/xndroli/Tech-Blog-MVC/issues"
-  },
-  "homepage": "https://github.com/xndroli/Tech-Blog-MVC#readme"
+	"name": "tech-blog-mvc",
+	"version": "1.0.0",
+	"description": "Model-View-Controller (MVC) Tech Blog",
+	"main": "server.js",
+	"scripts": {
+		"test": "jest",
+		"start": "node server.js",
+		"seed": "node seeds/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xndroli/Tech-Blog-MVC.git"
+	},
+	"author": "xndroli",
+	"license": "ISC",
+	"keywords": [
+		"model",
+		"view",
+		"controller",
+		"CMS",
+		"MVC",
+		"paradigm",
+		"handlebars.js",
+		"Sequelize",
+		"ORM",
+		"express-session",
+		"npm",
+		"authentication",
+		"MySQL2",
+		"dotenv",
+		"bcrypt",
+		"connect-session-sequelize"
+	],
+	"bugs": {
+		"url": "https://github.com/xndroli/Tech-Blog-MVC/issues"
+	},
+	"homepage": "https://github.com/xndroli/Tech-Blog-MVC#readme",
+	"dependencies": {
+		"bcrypt": "^4.0.1",
+		"connect-session-sequelize": "^6.1.1",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-handlebars": "^3.1.0",
+		"express-session": "^1.17.0",
+		"handlebars": "^4.7.3",
+		"mysql2": "^2.1.0",
+		"sequelize": "^5.21.5"
+	},
+	"devDependencies": {
+		"jest": "^25.1.0"
+	}
 }
