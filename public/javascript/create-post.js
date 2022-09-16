@@ -1,24 +1,27 @@
-async function upvoteClickHandler(event) {
-  event.preventDefault();
+async function newFormHandler(event) {
+	event.preventDefault();
 
-  const id = window.location.toString().split('/')[
-    window.location.toString().split('/').length - 1
-  ];
-  const response = await fetch('/api/posts/upvote', {
-    method: 'PUT',
-    body: JSON.stringify({
-      post_id: id
-    }),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
+	const title = document.querySelector('input[name="post-title"]').value;
+	const content = document.querySelector('input[name="post-content"]').value;
 
-  if (response.ok) {
-    document.location.reload();
-  } else {
-    alert(response.statusText);
-  }
+	const response = await fetch(`/api/posts`, {
+		method: 'POST',
+		body: JSON.stringify({
+			title,
+			content,
+		}),
+		headers: {
+			'Content-Type': 'application/json',
+		},
+	});
+
+	if (response.ok) {
+		document.location.replace('/dashboard');
+	} else {
+		alert(response.statusText);
+	}
 }
 
-document.querySelector('.upvote-btn').addEventListener('click', upvoteClickHandler);
+document
+	.querySelector('.new-post-form')
+	.addEventListener('submit', newFormHandler);
