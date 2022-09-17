@@ -15,6 +15,14 @@ const PORT = process.env.PORT || 3001;
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
+app.listen(process.env.PORT || 3000, function () {
+	console.log(
+		'Express server listening on port %d in %s mode',
+		this.address().port,
+		app.settings.env
+	);
+});
+
 const sess = {
 	secret: process.env.SESSION_SECRET,
 	cookie: {
